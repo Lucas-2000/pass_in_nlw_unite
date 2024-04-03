@@ -29,7 +29,7 @@ SET FILES NIO TRUE
 SET FILES NIO SIZE 256
 SET FILES LOG TRUE
 SET FILES LOG SIZE 50
-SET FILES CHECK 995
+SET FILES CHECK 1163
 SET DATABASE COLLATION "SQL_TEXT" PAD SPACE
 CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
 ALTER USER SA SET LOCAL TRUE
@@ -59,3 +59,4 @@ INSERT INTO "flyway_schema_history" VALUES(2,'2','create-table-attendees','SQL',
 INSERT INTO "flyway_schema_history" VALUES(3,'3','create-table-checkins','SQL','V3__create-table-checkins.sql',1441113343,'SA','2024-04-02 08:44:52.633993',1,'1')
 INSERT INTO "flyway_schema_history" VALUES(4,'4','create-indexes','SQL','V4__create-indexes.sql',553901455,'SA','2024-04-02 08:44:52.646994',1,'1')
 INSERT INTO EVENTS VALUES('52ad5007-fffb-4013-bd8b-42855c6e759c','NLW Unite','Aprenda java de forma gratuita','nlw-unite',500)
+INSERT INTO ATTENDEES VALUES('b81a1c04-916c-444d-98b3-424bd5f2bbd2','Lucas','teste@gmail.com','52ad5007-fffb-4013-bd8b-42855c6e759c','2024-04-03 10:16:09.409699')
